@@ -10,6 +10,10 @@ import Foundation
 
 class AppConfigs {
     
+    struct Common {
+        static let apiEnviroment: APIEnvironment = .prod
+    }
+    
     struct KeychainConfigs {
         static let serviceName: String = "com.openmrs.ios"
         static let accessGroup: String = "key.com.openmrs.ios"

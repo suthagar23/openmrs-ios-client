@@ -7,6 +7,7 @@ target 'OpenMRS-iOS-Client' do
 
   # Pods for OpenMRS-iOS-Client
   pod 'KeychainAccess', '~> 3.2'
+  pod 'Moya', '~> 12.0'
   
   target 'OpenMRS-iOS-ClientTests' do
     inherit! :search_paths

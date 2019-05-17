@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */; };
+		286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */; };
+		286BA6AA228EBCAB00C80564 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A9228EBCAB00C80564 /* Networkable.swift */; };
+		286BA6AC228EBCD600C80564 /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AB228EBCD600C80564 /* NetworkWrapper.swift */; };
+		286BA6AE228EBD4800C80564 /* SharedInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AD228EBD4800C80564 /* SharedInstances.swift */; };
+		286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */; };
+		286BA6B3228EBE2800C80564 /* AuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */; };
 		289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */; };
 		289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */; };
 		289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2018228E7E3100F9E95C /* KeyChainErrors.swift */; };
@@ -44,6 +51,13 @@
 		017F98DA12BBCDDA40E9CCB0 /* Pods_OpenMRS_iOS_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8F28F44FF2B2582AAFA0 /* Pods-OpenMRS-iOS-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-Client.debug.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		1972CE45D51DA2EDAD7CB464 /* Pods_OpenMRS_iOS_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSAPI.swift; sourceTree = "<group>"; };
+		286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnviroment.swift; sourceTree = "<group>"; };
+		286BA6A9228EBCAB00C80564 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		286BA6AB228EBCD600C80564 /* NetworkWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
+		286BA6AD228EBD4800C80564 /* SharedInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstances.swift; sourceTree = "<group>"; };
+		286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
+		286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceImpl.swift; sourceTree = "<group>"; };
 		289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapperProtocol.swift; sourceTree = "<group>"; };
 		289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapper.swift; sourceTree = "<group>"; };
 		289F2018228E7E3100F9E95C /* KeyChainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainErrors.swift; sourceTree = "<group>"; };
@@ -97,6 +111,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		286BA6A4228EBA0300C80564 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */,
+				286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		286BA6B1228EBE1C00C80564 /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
 		289F200F228E7DBD00F9E95C /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +147,10 @@
 		289F2011228E7DCA00F9E95C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				286BA6B1228EBE1C00C80564 /* Impl */,
+				286BA6A4228EBA0300C80564 /* API */,
 				289F2012228E7DD000F9E95C /* Wrapper */,
+				286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -126,6 +160,7 @@
 			children = (
 				289F2013228E7DEB00F9E95C /* Impl */,
 				289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */,
+				286BA6A9228EBCAB00C80564 /* Networkable.swift */,
 			);
 			path = Wrapper;
 			sourceTree = "<group>";
@@ -134,6 +169,7 @@
 			isa = PBXGroup;
 			children = (
 				289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */,
+				286BA6AB228EBCD600C80564 /* NetworkWrapper.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -142,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				289F201B228E7E8D00F9E95C /* AppConfig.swift */,
+				286BA6AD228EBD4800C80564 /* SharedInstances.swift */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -409,13 +446,19 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -451,12 +494,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				286BA6B3228EBE2800C80564 /* AuthServiceImpl.swift in Sources */,
+				286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */,
+				286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */,
+				286BA6AA228EBCAB00C80564 /* Networkable.swift in Sources */,
 				28C0D2FF228E7B5D0086ACF1 /* ViewController.swift in Sources */,
 				289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */,
 				28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */,
 				289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */,
+				286BA6AE228EBD4800C80564 /* SharedInstances.swift in Sources */,
 				289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */,
 				289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */,
+				286BA6AC228EBCD600C80564 /* NetworkWrapper.swift in Sources */,
+				286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
