@@ -6,7 +6,8 @@ target 'OpenMRS-iOS-Client' do
   use_frameworks!
 
   # Pods for OpenMRS-iOS-Client
-
+  pod 'KeychainAccess', '~> 3.2'
+  
   target 'OpenMRS-iOS-ClientTests' do
     inherit! :search_paths
     # Pods for testing

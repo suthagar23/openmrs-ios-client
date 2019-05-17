@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */; };
+		289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */; };
+		289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2018228E7E3100F9E95C /* KeyChainErrors.swift */; };
+		289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F201B228E7E8D00F9E95C /* AppConfig.swift */; };
 		28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0D2FC228E7B5D0086ACF1 /* AppDelegate.swift */; };
 		28C0D2FF228E7B5D0086ACF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0D2FE228E7B5D0086ACF1 /* ViewController.swift */; };
 		28C0D302228E7B5D0086ACF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C0D300228E7B5D0086ACF1 /* Main.storyboard */; };
@@ -40,6 +44,10 @@
 		017F98DA12BBCDDA40E9CCB0 /* Pods_OpenMRS_iOS_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8F28F44FF2B2582AAFA0 /* Pods-OpenMRS-iOS-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-Client.debug.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		1972CE45D51DA2EDAD7CB464 /* Pods_OpenMRS_iOS_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapperProtocol.swift; sourceTree = "<group>"; };
+		289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapper.swift; sourceTree = "<group>"; };
+		289F2018228E7E3100F9E95C /* KeyChainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainErrors.swift; sourceTree = "<group>"; };
+		289F201B228E7E8D00F9E95C /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
 		28C0D2F9228E7B5D0086ACF1 /* OpenMRS-iOS-Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OpenMRS-iOS-Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C0D2FC228E7B5D0086ACF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		28C0D2FE228E7B5D0086ACF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +97,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		289F200F228E7DBD00F9E95C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				289F2010228E7DC400F9E95C /* ErrorModels */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		289F2010228E7DC400F9E95C /* ErrorModels */ = {
+			isa = PBXGroup;
+			children = (
+				289F2018228E7E3100F9E95C /* KeyChainErrors.swift */,
+			);
+			path = ErrorModels;
+			sourceTree = "<group>";
+		};
+		289F2011228E7DCA00F9E95C /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				289F2012228E7DD000F9E95C /* Wrapper */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		289F2012228E7DD000F9E95C /* Wrapper */ = {
+			isa = PBXGroup;
+			children = (
+				289F2013228E7DEB00F9E95C /* Impl */,
+				289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */,
+			);
+			path = Wrapper;
+			sourceTree = "<group>";
+		};
+		289F2013228E7DEB00F9E95C /* Impl */ = {
+			isa = PBXGroup;
+			children = (
+				289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */,
+			);
+			path = Impl;
+			sourceTree = "<group>";
+		};
+		289F201A228E7E7C00F9E95C /* Configs */ = {
+			isa = PBXGroup;
+			children = (
+				289F201B228E7E8D00F9E95C /* AppConfig.swift */,
+			);
+			path = Configs;
+			sourceTree = "<group>";
+		};
 		28C0D2F0228E7B5D0086ACF1 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +171,9 @@
 		28C0D2FB228E7B5D0086ACF1 /* OpenMRS-iOS-Client */ = {
 			isa = PBXGroup;
 			children = (
+				289F201A228E7E7C00F9E95C /* Configs */,
+				289F2011228E7DCA00F9E95C /* Services */,
+				289F200F228E7DBD00F9E95C /* Models */,
 				28C0D2FC228E7B5D0086ACF1 /* AppDelegate.swift */,
 				28C0D2FE228E7B5D0086ACF1 /* ViewController.swift */,
 				28C0D300228E7B5D0086ACF1 /* Main.storyboard */,
@@ -162,7 +222,6 @@
 				94D13E12C287BCDD85FDF3F1 /* Pods-OpenMRS-iOS-ClientUITests.debug.xcconfig */,
 				6529DF8EFE0139EFE7B6B1A9 /* Pods-OpenMRS-iOS-ClientUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -177,6 +236,7 @@
 				28C0D2F5228E7B5D0086ACF1 /* Sources */,
 				28C0D2F6228E7B5D0086ACF1 /* Frameworks */,
 				28C0D2F7228E7B5D0086ACF1 /* Resources */,
+				DF731E964DFD84E7422F060B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +400,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		DF731E964DFD84E7422F060B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KeychainAccess/KeychainAccess.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainAccess.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F434379A19EC9585A2D8202A /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -370,7 +452,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				28C0D2FF228E7B5D0086ACF1 /* ViewController.swift in Sources */,
+				289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */,
 				28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */,
+				289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */,
+				289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */,
+				289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
