@@ -9,7 +9,12 @@
 import Foundation
 
 class Shared {
-    
+
     static var authorizedToken: String?
-    
+
+    /// Shared NetworkManager which can handles the BffRequests
+    static var sharedNetworWrapper: NetworkWrapper = {
+        var networkWrapper = NetworkWrapper()
+        return networkWrapper
+    }()
 }

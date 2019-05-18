@@ -14,15 +14,15 @@ import Foundation
  - prod: Production enviroment
  */
 public enum APIEnvironment: String {
-    case dev = "DEV"
-    case prod = "PROD"
-    
+    case demo = "demo"
+    case moduleRefApp = "Modules"
+
     static func getEnvironmentBaseURL() -> String {
         switch AppConfigs.Common.apiEnviroment {
-        case .dev:
+        case .demo:
             return "https://demo.openmrs.org/openmrs/ws/rest/v1"
-        case .prod:
-            return "https://demo.openmrs.org/openmrs/ws/rest/v1"
+        case .moduleRefApp:
+            return "https://modules-refapp.openmrs.org/openmrs/ws/rest/v1"
         }
     }
 }

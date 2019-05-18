@@ -9,7 +9,18 @@
 import Foundation
 
 protocol AuthServiceProtocol {
-    
-    func authenticateUser(userName: String?, password: String?)
-    
+
+    /**
+     Authenticate user method
+     - parameters:
+         - username: Username string
+         - password: Password string
+         - onSuccess: Success handler
+        - auth: AuthResponse Model
+         - onError: Error handler
+        - apiError: ApiResponseErrors Model
+    */
+    func authenticateUser(userName: String?, password: String?, onSuccess: @escaping (_ auth: AuthResponse) -> Void,
+                          onError: @escaping (_ apiError: ApiResponseErrors) -> Void)
+
 }

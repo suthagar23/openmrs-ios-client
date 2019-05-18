@@ -1,5 +1,5 @@
 //
-//  Networkable.swift
+//  Link.swift
 //  OpenMRS-iOS-Client
 //
 //  Created by Kailayapathy Suthagar on 5/17/19.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-import Foundation
-import Moya
-
-protocol Networkable {
-    var provider: MoyaProvider<OpenMRSAPI> { get }
+struct Link: Codable {
+    var rel: String?
+    var uri: String?
 }

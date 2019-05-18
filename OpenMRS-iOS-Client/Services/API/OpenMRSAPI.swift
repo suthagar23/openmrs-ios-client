@@ -15,48 +15,56 @@ enum OpenMRSAPI {
 }
 
 extension OpenMRSAPI: TargetType {
-    
+
     var environmentBaseURL: String {
         return APIEnvironment.getEnvironmentBaseURL()
     }
-    
+
     var baseURL: URL {
         guard let url =  URL (string: environmentBaseURL) else {
             fatalError("Couldn't configure the baseURL")
         }
         return url
     }
-    
+
     var path: String {
         switch self {
         case .login: return "/session"
         }
     }
-    
+
     var method: Moya.Method {
         switch self {
         case .login: return .get
         }
     }
-    
+
     var task: Task {
         switch self {
         case .login (let username, let password):
-            return .requestParameters(parameters: ["username": username, "password": password], encoding: JSONEncoding.default)
+            return .requestParameters(parameters: ["username": username, "password": password], encoding: URLEncoding.queryString)
         }
     }
-    
+
     var headers: [String: String]? {
-        return ["content-type": "application/json"]
+        var headers = ["content-type": "application/json"]
+        switch self {
+        case .login(let username, let password):
+            let base64LoginString = "\(username):\(password)".base64EncodedString
+            headers["Authorization"] = "Basic \(base64LoginString)"
+            return headers
+        default:
+            return headers
+        }
     }
-    
+
     var sampleData: Data {
         switch self {
         case .login:
             return stubbedResponse("Login")
         }
     }
-    
+
     func stubbedResponse(_ filename: String) -> Data! {
         @objc class TestClass: NSObject { }
         let bundle = Bundle(for: TestClass.self)

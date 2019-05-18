@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		280323CB22906A22001F938B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CA22906A22001F938B /* String.swift */; };
+		280323CD22906A77001F938B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CC22906A77001F938B /* Data.swift */; };
+		280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CE2290709C001F938B /* ApiErrorCodes.swift */; };
+		285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */; };
 		286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */; };
 		286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */; };
-		286BA6AA228EBCAB00C80564 /* Networkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A9228EBCAB00C80564 /* Networkable.swift */; };
+		286BA6AA228EBCAB00C80564 /* NetworkableProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A9228EBCAB00C80564 /* NetworkableProtocol.swift */; };
 		286BA6AC228EBCD600C80564 /* NetworkWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AB228EBCD600C80564 /* NetworkWrapper.swift */; };
 		286BA6AE228EBD4800C80564 /* SharedInstances.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AD228EBD4800C80564 /* SharedInstances.swift */; };
 		286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */; };
 		286BA6B3228EBE2800C80564 /* AuthServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */; };
+		286BA6B9228EE76F00C80564 /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6B8228EE76F00C80564 /* Link.swift */; };
+		286BA6BB228EE7D500C80564 /* ObjectLite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6BA228EE7D500C80564 /* ObjectLite.swift */; };
+		286BA6BD228EE80E00C80564 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6BC228EE80E00C80564 /* User.swift */; };
+		286BA6BF228EE96E00C80564 /* AuthenticationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6BE228EE96E00C80564 /* AuthenticationResponse.swift */; };
 		289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */; };
 		289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */; };
 		289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289F2018228E7E3100F9E95C /* KeyChainErrors.swift */; };
@@ -51,13 +59,21 @@
 		017F98DA12BBCDDA40E9CCB0 /* Pods_OpenMRS_iOS_ClientTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C9F8F28F44FF2B2582AAFA0 /* Pods-OpenMRS-iOS-Client.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-Client.debug.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-Client/Pods-OpenMRS-iOS-Client.debug.xcconfig"; sourceTree = "<group>"; };
 		1972CE45D51DA2EDAD7CB464 /* Pods_OpenMRS_iOS_ClientUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_ClientUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		280323CA22906A22001F938B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		280323CC22906A77001F938B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		280323CE2290709C001F938B /* ApiErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorCodes.swift; sourceTree = "<group>"; };
+		285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrors.swift; sourceTree = "<group>"; };
 		286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSAPI.swift; sourceTree = "<group>"; };
 		286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnviroment.swift; sourceTree = "<group>"; };
-		286BA6A9228EBCAB00C80564 /* Networkable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networkable.swift; sourceTree = "<group>"; };
+		286BA6A9228EBCAB00C80564 /* NetworkableProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkableProtocol.swift; sourceTree = "<group>"; };
 		286BA6AB228EBCD600C80564 /* NetworkWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkWrapper.swift; sourceTree = "<group>"; };
 		286BA6AD228EBD4800C80564 /* SharedInstances.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedInstances.swift; sourceTree = "<group>"; };
 		286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceProtocol.swift; sourceTree = "<group>"; };
 		286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServiceImpl.swift; sourceTree = "<group>"; };
+		286BA6B8228EE76F00C80564 /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		286BA6BA228EE7D500C80564 /* ObjectLite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectLite.swift; sourceTree = "<group>"; };
+		286BA6BC228EE80E00C80564 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		286BA6BE228EE96E00C80564 /* AuthenticationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationResponse.swift; sourceTree = "<group>"; };
 		289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapperProtocol.swift; sourceTree = "<group>"; };
 		289F2016228E7E0B00F9E95C /* KeychainStorageWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorageWrapper.swift; sourceTree = "<group>"; };
 		289F2018228E7E3100F9E95C /* KeyChainErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainErrors.swift; sourceTree = "<group>"; };
@@ -111,6 +127,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		280323C822906A0D001F938B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				280323C922906A14001F938B /* Extensions */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		280323C922906A14001F938B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				280323CA22906A22001F938B /* String.swift */,
+				280323CC22906A77001F938B /* Data.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		286BA6A4228EBA0300C80564 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +165,10 @@
 			isa = PBXGroup;
 			children = (
 				289F2010228E7DC400F9E95C /* ErrorModels */,
+				286BA6B8228EE76F00C80564 /* Link.swift */,
+				286BA6BA228EE7D500C80564 /* ObjectLite.swift */,
+				286BA6BC228EE80E00C80564 /* User.swift */,
+				286BA6BE228EE96E00C80564 /* AuthenticationResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -140,6 +177,8 @@
 			isa = PBXGroup;
 			children = (
 				289F2018228E7E3100F9E95C /* KeyChainErrors.swift */,
+				285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */,
+				280323CE2290709C001F938B /* ApiErrorCodes.swift */,
 			);
 			path = ErrorModels;
 			sourceTree = "<group>";
@@ -160,7 +199,7 @@
 			children = (
 				289F2013228E7DEB00F9E95C /* Impl */,
 				289F2014228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift */,
-				286BA6A9228EBCAB00C80564 /* Networkable.swift */,
+				286BA6A9228EBCAB00C80564 /* NetworkableProtocol.swift */,
 			);
 			path = Wrapper;
 			sourceTree = "<group>";
@@ -208,6 +247,7 @@
 		28C0D2FB228E7B5D0086ACF1 /* OpenMRS-iOS-Client */ = {
 			isa = PBXGroup;
 			children = (
+				280323C822906A0D001F938B /* Helpers */,
 				289F201A228E7E7C00F9E95C /* Configs */,
 				289F2011228E7DCA00F9E95C /* Services */,
 				289F200F228E7DBD00F9E95C /* Models */,
@@ -494,12 +534,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				280323CB22906A22001F938B /* String.swift in Sources */,
 				286BA6B3228EBE2800C80564 /* AuthServiceImpl.swift in Sources */,
+				286BA6B9228EE76F00C80564 /* Link.swift in Sources */,
+				286BA6BB228EE7D500C80564 /* ObjectLite.swift in Sources */,
 				286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */,
+				286BA6BD228EE80E00C80564 /* User.swift in Sources */,
+				280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */,
 				286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */,
-				286BA6AA228EBCAB00C80564 /* Networkable.swift in Sources */,
+				286BA6AA228EBCAB00C80564 /* NetworkableProtocol.swift in Sources */,
 				28C0D2FF228E7B5D0086ACF1 /* ViewController.swift in Sources */,
+				286BA6BF228EE96E00C80564 /* AuthenticationResponse.swift in Sources */,
 				289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */,
+				280323CD22906A77001F938B /* Data.swift in Sources */,
+				285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */,
 				28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */,
 				289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */,
 				286BA6AE228EBD4800C80564 /* SharedInstances.swift in Sources */,

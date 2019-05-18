@@ -9,19 +9,37 @@
 import Foundation
 import Moya
 
-public struct NetworkWrapper: Networkable {
+public struct NetworkWrapper: NetworkableProtocol {
     var provider = MoyaProvider<OpenMRSAPI>.init(plugins: [NetworkLoggerPlugin(verbose: true),
-                                                       AuthPlugin()])
+                                                           AuthPlugin()])
+
     public init() { }
 }
 
 struct AuthPlugin: PluginType {
-    
+
     func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         var authRequest = request
         if(Shared.authorizedToken != nil) {
             authRequest.addValue("Bearer " + Shared.authorizedToken!, forHTTPHeaderField: "Authorization")
         }
         return authRequest
+    }
+}
+
+extension NetworkWrapper {
+
+    func validateAPIResponseCodes(response: Response, onAPISuccess: @escaping (_ data: Data) -> Void,
+                             onAPIFailure: @escaping (_ apiResponseErrors: ApiResponseErrors) -> Void) {
+        let statusCode: Int = response.statusCode
+        if statusCode == 200 {
+            onAPISuccess(response.data)
+        } else if statusCode == 400 || statusCode == 401 {
+            onAPIFailure(ApiResponseErrors.authError(errorCode: ApiErrorCodes.authenticationError))
+        } else if statusCode == 500 {
+            onAPIFailure(ApiResponseErrors.authError(errorCode: ApiErrorCodes.internalServerError))
+        } else {
+            onAPIFailure(ApiResponseErrors.unknownError(errorCode: ApiErrorCodes.unknownResponseStatusCode))
+        }
     }
 }
