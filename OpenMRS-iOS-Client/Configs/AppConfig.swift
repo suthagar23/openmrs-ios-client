@@ -11,7 +11,7 @@ import Foundation
 class AppConfigs {
 
     struct Common {
-        static let apiEnviroment: APIEnvironment = .moduleRefApp
+        static let apiEnviroment: APIEnvironment = .demo
     }
 
     struct KeychainConfigs {

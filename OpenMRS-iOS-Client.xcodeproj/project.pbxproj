@@ -10,6 +10,8 @@
 		280323CB22906A22001F938B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CA22906A22001F938B /* String.swift */; };
 		280323CD22906A77001F938B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CC22906A77001F938B /* Data.swift */; };
 		280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CE2290709C001F938B /* ApiErrorCodes.swift */; };
+		280323D322907C67001F938B /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323D222907C67001F938B /* LaunchScreenController.swift */; };
+		280323D622907D15001F938B /* OpenMRSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323D522907D15001F938B /* OpenMRSColors.swift */; };
 		285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */; };
 		286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */; };
 		286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */; };
@@ -33,6 +35,16 @@
 		28C0D307228E7B5D0086ACF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28C0D305228E7B5D0086ACF1 /* LaunchScreen.storyboard */; };
 		28C0D312228E7B5E0086ACF1 /* OpenMRS_iOS_ClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0D311228E7B5E0086ACF1 /* OpenMRS_iOS_ClientTests.swift */; };
 		28C0D31D228E7B5E0086ACF1 /* OpenMRS_iOS_ClientUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28C0D31C228E7B5E0086ACF1 /* OpenMRS_iOS_ClientUITests.swift */; };
+		28FC6CFC2297B08A00847A2D /* PatientServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6CFB2297B08A00847A2D /* PatientServiceProtocol.swift */; };
+		28FC6CFE2297B19F00847A2D /* PatientServiceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6CFD2297B19F00847A2D /* PatientServiceImpl.swift */; };
+		28FC6D002297B46500847A2D /* PatientServiceResponses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6CFF2297B46500847A2D /* PatientServiceResponses.swift */; };
+		28FC6D022297F53200847A2D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D012297F53200847A2D /* Person.swift */; };
+		28FC6D042297F53D00847A2D /* AuditInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D032297F53D00847A2D /* AuditInfo.swift */; };
+		28FC6D062297F54E00847A2D /* PersonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D052297F54E00847A2D /* PersonName.swift */; };
+		28FC6D082297F55A00847A2D /* PersonAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D072297F55A00847A2D /* PersonAddress.swift */; };
+		28FC6D0A2297F56700847A2D /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D092297F56700847A2D /* Identifier.swift */; };
+		28FC6D0C22980C2C00847A2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D0B22980C2C00847A2D /* Patient.swift */; };
+		28FC6D0E22980FE600847A2D /* CustomArrayOrDic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D0D22980FE600847A2D /* CustomArrayOrDic.swift */; };
 		A2E712B902E836F693580E0A /* Pods_OpenMRS_iOS_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017F98DA12BBCDDA40E9CCB0 /* Pods_OpenMRS_iOS_ClientTests.framework */; };
 		D1C0F8B26D1841C0627EC9D8 /* Pods_OpenMRS_iOS_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1972CE45D51DA2EDAD7CB464 /* Pods_OpenMRS_iOS_ClientUITests.framework */; };
 		FC37B2A44E9CDB48FC07684D /* Pods_OpenMRS_iOS_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D89C0AA5D159FED88075B70 /* Pods_OpenMRS_iOS_Client.framework */; };
@@ -62,6 +74,8 @@
 		280323CA22906A22001F938B /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		280323CC22906A77001F938B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		280323CE2290709C001F938B /* ApiErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorCodes.swift; sourceTree = "<group>"; };
+		280323D222907C67001F938B /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
+		280323D522907D15001F938B /* OpenMRSColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSColors.swift; sourceTree = "<group>"; };
 		285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrors.swift; sourceTree = "<group>"; };
 		286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSAPI.swift; sourceTree = "<group>"; };
 		286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnviroment.swift; sourceTree = "<group>"; };
@@ -91,6 +105,16 @@
 		28C0D318228E7B5E0086ACF1 /* OpenMRS-iOS-ClientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OpenMRS-iOS-ClientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28C0D31C228E7B5E0086ACF1 /* OpenMRS_iOS_ClientUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRS_iOS_ClientUITests.swift; sourceTree = "<group>"; };
 		28C0D31E228E7B5E0086ACF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28FC6CFB2297B08A00847A2D /* PatientServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientServiceProtocol.swift; sourceTree = "<group>"; };
+		28FC6CFD2297B19F00847A2D /* PatientServiceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientServiceImpl.swift; sourceTree = "<group>"; };
+		28FC6CFF2297B46500847A2D /* PatientServiceResponses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientServiceResponses.swift; sourceTree = "<group>"; };
+		28FC6D012297F53200847A2D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		28FC6D032297F53D00847A2D /* AuditInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuditInfo.swift; sourceTree = "<group>"; };
+		28FC6D052297F54E00847A2D /* PersonName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonName.swift; sourceTree = "<group>"; };
+		28FC6D072297F55A00847A2D /* PersonAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonAddress.swift; sourceTree = "<group>"; };
+		28FC6D092297F56700847A2D /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
+		28FC6D0B22980C2C00847A2D /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
+		28FC6D0D22980FE600847A2D /* CustomArrayOrDic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomArrayOrDic.swift; sourceTree = "<group>"; };
 		5D89C0AA5D159FED88075B70 /* Pods_OpenMRS_iOS_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529DF8EFE0139EFE7B6B1A9 /* Pods-OpenMRS-iOS-ClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-ClientUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-ClientUITests/Pods-OpenMRS-iOS-ClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B594999D211B09724B2858F /* Pods-OpenMRS-iOS-ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-ClientTests.release.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-ClientTests/Pods-OpenMRS-iOS-ClientTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,6 +168,31 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		280323D022907C0A001F938B /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				28C0D300228E7B5D0086ACF1 /* Main.storyboard */,
+				28C0D305228E7B5D0086ACF1 /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		280323D122907C3A001F938B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				280323D222907C67001F938B /* LaunchScreenController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		280323D422907D06001F938B /* OpenMRS */ = {
+			isa = PBXGroup;
+			children = (
+				280323D522907D15001F938B /* OpenMRSColors.swift */,
+			);
+			path = OpenMRS;
+			sourceTree = "<group>";
+		};
 		286BA6A4228EBA0300C80564 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				286BA6B2228EBE2800C80564 /* AuthServiceImpl.swift */,
+				28FC6CFD2297B19F00847A2D /* PatientServiceImpl.swift */,
 			);
 			path = Impl;
 			sourceTree = "<group>";
@@ -168,7 +218,15 @@
 				286BA6B8228EE76F00C80564 /* Link.swift */,
 				286BA6BA228EE7D500C80564 /* ObjectLite.swift */,
 				286BA6BC228EE80E00C80564 /* User.swift */,
+				28FC6D0D22980FE600847A2D /* CustomArrayOrDic.swift */,
 				286BA6BE228EE96E00C80564 /* AuthenticationResponse.swift */,
+				28FC6CFF2297B46500847A2D /* PatientServiceResponses.swift */,
+				28FC6D012297F53200847A2D /* Person.swift */,
+				28FC6D032297F53D00847A2D /* AuditInfo.swift */,
+				28FC6D052297F54E00847A2D /* PersonName.swift */,
+				28FC6D072297F55A00847A2D /* PersonAddress.swift */,
+				28FC6D092297F56700847A2D /* Identifier.swift */,
+				28FC6D0B22980C2C00847A2D /* Patient.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -190,6 +248,7 @@
 				286BA6A4228EBA0300C80564 /* API */,
 				289F2012228E7DD000F9E95C /* Wrapper */,
 				286BA6AF228EBE1800C80564 /* AuthServiceProtocol.swift */,
+				28FC6CFB2297B08A00847A2D /* PatientServiceProtocol.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -216,6 +275,7 @@
 		289F201A228E7E7C00F9E95C /* Configs */ = {
 			isa = PBXGroup;
 			children = (
+				280323D422907D06001F938B /* OpenMRS */,
 				289F201B228E7E8D00F9E95C /* AppConfig.swift */,
 				286BA6AD228EBD4800C80564 /* SharedInstances.swift */,
 			);
@@ -247,15 +307,15 @@
 		28C0D2FB228E7B5D0086ACF1 /* OpenMRS-iOS-Client */ = {
 			isa = PBXGroup;
 			children = (
+				280323D122907C3A001F938B /* Views */,
+				280323D022907C0A001F938B /* StoryBoards */,
 				280323C822906A0D001F938B /* Helpers */,
 				289F201A228E7E7C00F9E95C /* Configs */,
 				289F2011228E7DCA00F9E95C /* Services */,
 				289F200F228E7DBD00F9E95C /* Models */,
 				28C0D2FC228E7B5D0086ACF1 /* AppDelegate.swift */,
 				28C0D2FE228E7B5D0086ACF1 /* ViewController.swift */,
-				28C0D300228E7B5D0086ACF1 /* Main.storyboard */,
 				28C0D303228E7B5D0086ACF1 /* Assets.xcassets */,
-				28C0D305228E7B5D0086ACF1 /* LaunchScreen.storyboard */,
 				28C0D308228E7B5D0086ACF1 /* Info.plist */,
 			);
 			path = "OpenMRS-iOS-Client";
@@ -535,26 +595,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				280323CB22906A22001F938B /* String.swift in Sources */,
+				28FC6D082297F55A00847A2D /* PersonAddress.swift in Sources */,
 				286BA6B3228EBE2800C80564 /* AuthServiceImpl.swift in Sources */,
+				28FC6CFE2297B19F00847A2D /* PatientServiceImpl.swift in Sources */,
 				286BA6B9228EE76F00C80564 /* Link.swift in Sources */,
 				286BA6BB228EE7D500C80564 /* ObjectLite.swift in Sources */,
 				286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */,
+				28FC6D0E22980FE600847A2D /* CustomArrayOrDic.swift in Sources */,
 				286BA6BD228EE80E00C80564 /* User.swift in Sources */,
+				28FC6D062297F54E00847A2D /* PersonName.swift in Sources */,
+				280323D322907C67001F938B /* LaunchScreenController.swift in Sources */,
 				280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */,
 				286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */,
 				286BA6AA228EBCAB00C80564 /* NetworkableProtocol.swift in Sources */,
 				28C0D2FF228E7B5D0086ACF1 /* ViewController.swift in Sources */,
+				28FC6D002297B46500847A2D /* PatientServiceResponses.swift in Sources */,
 				286BA6BF228EE96E00C80564 /* AuthenticationResponse.swift in Sources */,
 				289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */,
+				28FC6D022297F53200847A2D /* Person.swift in Sources */,
 				280323CD22906A77001F938B /* Data.swift in Sources */,
 				285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */,
 				28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */,
 				289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */,
+				28FC6D0A2297F56700847A2D /* Identifier.swift in Sources */,
 				286BA6AE228EBD4800C80564 /* SharedInstances.swift in Sources */,
+				28FC6D042297F53D00847A2D /* AuditInfo.swift in Sources */,
 				289F2019228E7E3100F9E95C /* KeyChainErrors.swift in Sources */,
+				280323D622907D15001F938B /* OpenMRSColors.swift in Sources */,
 				289F2015228E7DFE00F9E95C /* KeychainStorageWrapperProtocol.swift in Sources */,
 				286BA6AC228EBCD600C80564 /* NetworkWrapper.swift in Sources */,
+				28FC6D0C22980C2C00847A2D /* Patient.swift in Sources */,
 				286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */,
+				28FC6CFC2297B08A00847A2D /* PatientServiceProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

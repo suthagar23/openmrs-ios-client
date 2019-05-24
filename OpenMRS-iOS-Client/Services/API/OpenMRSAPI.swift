@@ -11,7 +11,8 @@ import Moya
 
 enum OpenMRSAPI {
     //auth
-    case login (username:String, password:String)
+    case login (username: String, password: String)
+    case searchPatients(q: String, v: APIResponseType, limit: String, startIndex: String, identifier: String)
 }
 
 extension OpenMRSAPI: TargetType {
@@ -30,12 +31,14 @@ extension OpenMRSAPI: TargetType {
     var path: String {
         switch self {
         case .login: return "/session"
+        case .searchPatients: return "/patient"
         }
     }
 
     var method: Moya.Method {
         switch self {
         case .login: return .get
+        case .searchPatients: return .get
         }
     }
 
@@ -43,6 +46,10 @@ extension OpenMRSAPI: TargetType {
         switch self {
         case .login (let username, let password):
             return .requestParameters(parameters: ["username": username, "password": password], encoding: URLEncoding.queryString)
+        case .searchPatients(let q, let v, let limit, let startIndex, let identifier):
+            var params = ["q": q, "limit": limit, "startIndex": startIndex, "identifier": identifier]
+            if v != .refType { params["v"] = v.rawValue }
+            return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
         }
     }
 
@@ -60,8 +67,8 @@ extension OpenMRSAPI: TargetType {
 
     var sampleData: Data {
         switch self {
-        case .login:
-            return stubbedResponse("Login")
+        case .login: return stubbedResponse("Login")
+        case .searchPatients: return stubbedResponse("GetPatients")
         }
     }
 

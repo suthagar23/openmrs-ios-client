@@ -13,15 +13,11 @@ struct User: Codable {
     var display: String?
     var username: String?
     var systemId: String?
-    var userProperties: UserProperties?
+    var userProperties: CustomArrayOrDic?
     var person: ObjectLite?
     var privileges: [ObjectLite]?
     var roles: [ObjectLite]?
     var retried: Bool?
     var links: [Link]?
     var resourceVersion: String?
-}
-
-struct UserProperties: Codable {
-    var loginAttempts: String?
 }

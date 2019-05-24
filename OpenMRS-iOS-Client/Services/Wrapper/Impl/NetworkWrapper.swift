@@ -9,6 +9,12 @@
 import Foundation
 import Moya
 
+enum APIResponseType: String {
+    case fullType = "full"
+    case defaultType = "default"
+    case refType = ""
+}
+
 public struct NetworkWrapper: NetworkableProtocol {
     var provider = MoyaProvider<OpenMRSAPI>.init(plugins: [NetworkLoggerPlugin(verbose: true),
                                                            AuthPlugin()])
@@ -21,7 +27,7 @@ struct AuthPlugin: PluginType {
     func prepare(_ request: URLRequest, target: TargetType) -> URLRequest {
         var authRequest = request
         if(Shared.authorizedToken != nil) {
-            authRequest.addValue("Bearer " + Shared.authorizedToken!, forHTTPHeaderField: "Authorization")
+            authRequest.addValue("Basic " + Shared.authorizedToken!, forHTTPHeaderField: "Authorization")
         }
         return authRequest
     }
