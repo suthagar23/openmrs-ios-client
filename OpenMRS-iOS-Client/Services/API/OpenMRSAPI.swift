@@ -13,6 +13,7 @@ enum OpenMRSAPI {
     //auth
     case login (username: String, password: String)
     case searchPatients(q: String, v: APIResponseType, limit: String, startIndex: String, identifier: String)
+    case getPatient(uuid: String, v: APIResponseType)
 }
 
 extension OpenMRSAPI: TargetType {
@@ -32,6 +33,8 @@ extension OpenMRSAPI: TargetType {
         switch self {
         case .login: return "/session"
         case .searchPatients: return "/patient"
+        case .getPatient(let uuid, _):
+            return "/patient/\(uuid)"
         }
     }
 
@@ -39,6 +42,7 @@ extension OpenMRSAPI: TargetType {
         switch self {
         case .login: return .get
         case .searchPatients: return .get
+        case .getPatient: return .get
         }
     }
 
@@ -50,6 +54,8 @@ extension OpenMRSAPI: TargetType {
             var params = ["q": q, "limit": limit, "startIndex": startIndex, "identifier": identifier]
             if v != .refType { params["v"] = v.rawValue }
             return .requestParameters(parameters: params, encoding: URLEncoding.queryString)
+        case .getPatient(_, let v):
+            return .requestParameters(parameters: v != .defaultType ? ["v": v.rawValue] : [:], encoding: URLEncoding.queryString)
         }
     }
 
@@ -66,10 +72,7 @@ extension OpenMRSAPI: TargetType {
     }
 
     var sampleData: Data {
-        switch self {
-        case .login: return stubbedResponse("Login")
-        case .searchPatients: return stubbedResponse("GetPatients")
-        }
+        return stubbedResponse("Sample")
     }
 
     func stubbedResponse(_ filename: String) -> Data! {

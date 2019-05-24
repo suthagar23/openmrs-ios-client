@@ -28,7 +28,22 @@ protocol PatientServiceProtocol {
                      limit: String?,
                      startIndex: String?,
                      identifier: String?,
-                     onSuccess: @escaping (_ response: PatientServiceSuccessResponses) -> Void,
+                     onSuccess: @escaping (_ response: SearchPatientsSuccessResponses) -> Void,
                      onError: @escaping (_ apiError: ApiResponseErrors) -> Void)
+    
+    /**
+     Get a Patient Information
+     - parameters:
+         - uuid: Uuid of the patient
+         - v: Response Types (Default, Full, Ref) (Optional)
+         - onSuccess: Success handler
+         - patients: List of ObjectLite Model related to Patient
+         - onError: Error handler
+         - apiError: ApiResponseErrors Model
+     */
+    func getPatient(uuid: String?,
+                        v: APIResponseType?,
+                        onSuccess: @escaping (_ response: GetPatientsSuccessResponses) -> Void,
+                        onError: @escaping (_ apiError: ApiResponseErrors) -> Void)
 
 }
