@@ -29,6 +29,7 @@ extension NetworkWrapper: AuthServiceProtocol {
                     onError(apiResponseError)
                 })
             case let .failure(error):
+                onError(ApiResponseErrors.requestFailed(stack: error))
                 print(error.errorDescription!)
             }
         }

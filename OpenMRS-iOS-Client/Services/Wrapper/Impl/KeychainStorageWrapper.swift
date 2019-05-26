@@ -14,13 +14,7 @@ class KeychainStorageWrapper: KeychainStorageWrapperProtocol {
 
     private let keychainWrapper: Keychain
 
-    /// Shared KeychainWrapper instance among all the classes
-    static var sharedKeychainWrapper: KeychainStorageWrapper = {
-        let keychainWrapper = KeychainStorageWrapper()
-        return keychainWrapper
-    }()
-
-    private init() {
+    init() {
         keychainWrapper = Keychain(service: AppConfigs.KeychainConfigs.serviceName,
                                    accessGroup: AppConfigs.KeychainConfigs.accessGroup)
             .accessibility(.whenUnlocked)

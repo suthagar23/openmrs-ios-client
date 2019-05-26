@@ -12,9 +12,23 @@ class Shared {
 
     static var authorizedToken: String?
 
+    static var openmrsServerURL: String = {
+        do {
+            return try sharedKeychainWrapper.getString(AppConfigs.KeychainKeys.OpenMRSServerURL) ?? ""
+        } catch let error {
+            return ""
+        }
+    }()
+    
     /// Shared NetworkManager which can handles the BffRequests
     static var sharedNetworWrapper: NetworkWrapper = {
         var networkWrapper = NetworkWrapper()
         return networkWrapper
+    }()
+    
+    /// Shared KeychainWrapper instance among all the classes
+    static var sharedKeychainWrapper: KeychainStorageWrapper = {
+        let keychainWrapper = KeychainStorageWrapper()
+        return keychainWrapper
     }()
 }

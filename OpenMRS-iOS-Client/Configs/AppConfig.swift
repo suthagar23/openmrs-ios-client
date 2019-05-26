@@ -11,7 +11,7 @@ import Foundation
 class AppConfigs {
 
     struct Common {
-        static let apiEnviroment: APIEnvironment = .demo
+        static let apiEnviroment: APIEnvironment = .custom
     }
 
     struct KeychainConfigs {
@@ -19,5 +19,9 @@ class AppConfigs {
         static let accessGroup: String = "key.com.openmrs.ios"
         static let keyPrefix: String = "openmrs-"
         static let iOSCloudSync: Bool = false // turn off synchronizing keychain items with iCloud
+    }
+    
+    struct KeychainKeys {
+         static let OpenMRSServerURL = "openmrs-server-url"
     }
 }

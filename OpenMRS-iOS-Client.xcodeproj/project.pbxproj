@@ -12,6 +12,9 @@
 		280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323CE2290709C001F938B /* ApiErrorCodes.swift */; };
 		280323D322907C67001F938B /* LaunchScreenController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323D222907C67001F938B /* LaunchScreenController.swift */; };
 		280323D622907D15001F938B /* OpenMRSColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280323D522907D15001F938B /* OpenMRSColors.swift */; };
+		281CD4E3229A7BF80051FBB7 /* CustomLoadingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CD4E2229A7BF80051FBB7 /* CustomLoadingButton.swift */; };
+		281CD4E5229A7FC20051FBB7 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CD4E4229A7FC20051FBB7 /* Utility.swift */; };
+		281CD4E7229A89010051FBB7 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281CD4E6229A89010051FBB7 /* LoginViewController.swift */; };
 		285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */; };
 		286BA6A6228EBA1D00C80564 /* OpenMRSAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */; };
 		286BA6A8228EBC7500C80564 /* ApiEnviroment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */; };
@@ -45,6 +48,8 @@
 		28FC6D0A2297F56700847A2D /* Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D092297F56700847A2D /* Identifier.swift */; };
 		28FC6D0C22980C2C00847A2D /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D0B22980C2C00847A2D /* Patient.swift */; };
 		28FC6D0E22980FE600847A2D /* CustomArrayOrDic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D0D22980FE600847A2D /* CustomArrayOrDic.swift */; };
+		28FC6D102299BF1200847A2D /* AddServerURLController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FC6D0F2299BF1200847A2D /* AddServerURLController.swift */; };
+		28FC6D122299C14A00847A2D /* Authentication.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28FC6D112299C14A00847A2D /* Authentication.storyboard */; };
 		A2E712B902E836F693580E0A /* Pods_OpenMRS_iOS_ClientTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 017F98DA12BBCDDA40E9CCB0 /* Pods_OpenMRS_iOS_ClientTests.framework */; };
 		D1C0F8B26D1841C0627EC9D8 /* Pods_OpenMRS_iOS_ClientUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1972CE45D51DA2EDAD7CB464 /* Pods_OpenMRS_iOS_ClientUITests.framework */; };
 		FC37B2A44E9CDB48FC07684D /* Pods_OpenMRS_iOS_Client.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D89C0AA5D159FED88075B70 /* Pods_OpenMRS_iOS_Client.framework */; };
@@ -76,6 +81,9 @@
 		280323CE2290709C001F938B /* ApiErrorCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiErrorCodes.swift; sourceTree = "<group>"; };
 		280323D222907C67001F938B /* LaunchScreenController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenController.swift; sourceTree = "<group>"; };
 		280323D522907D15001F938B /* OpenMRSColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSColors.swift; sourceTree = "<group>"; };
+		281CD4E2229A7BF80051FBB7 /* CustomLoadingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLoadingButton.swift; sourceTree = "<group>"; };
+		281CD4E4229A7FC20051FBB7 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		281CD4E6229A89010051FBB7 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		285477CF228F118B00B5C7C6 /* ApiResponseErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResponseErrors.swift; sourceTree = "<group>"; };
 		286BA6A5228EBA1D00C80564 /* OpenMRSAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenMRSAPI.swift; sourceTree = "<group>"; };
 		286BA6A7228EBC7500C80564 /* ApiEnviroment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiEnviroment.swift; sourceTree = "<group>"; };
@@ -115,6 +123,8 @@
 		28FC6D092297F56700847A2D /* Identifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Identifier.swift; sourceTree = "<group>"; };
 		28FC6D0B22980C2C00847A2D /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		28FC6D0D22980FE600847A2D /* CustomArrayOrDic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomArrayOrDic.swift; sourceTree = "<group>"; };
+		28FC6D0F2299BF1200847A2D /* AddServerURLController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddServerURLController.swift; sourceTree = "<group>"; };
+		28FC6D112299C14A00847A2D /* Authentication.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Authentication.storyboard; sourceTree = "<group>"; };
 		5D89C0AA5D159FED88075B70 /* Pods_OpenMRS_iOS_Client.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenMRS_iOS_Client.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6529DF8EFE0139EFE7B6B1A9 /* Pods-OpenMRS-iOS-ClientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-ClientUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-ClientUITests/Pods-OpenMRS-iOS-ClientUITests.release.xcconfig"; sourceTree = "<group>"; };
 		6B594999D211B09724B2858F /* Pods-OpenMRS-iOS-ClientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenMRS-iOS-ClientTests.release.xcconfig"; path = "Target Support Files/Pods-OpenMRS-iOS-ClientTests/Pods-OpenMRS-iOS-ClientTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -154,7 +164,9 @@
 		280323C822906A0D001F938B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				281CD4E1229A7BE30051FBB7 /* Components */,
 				280323C922906A14001F938B /* Extensions */,
+				281CD4E4229A7FC20051FBB7 /* Utility.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -173,6 +185,7 @@
 			children = (
 				28C0D300228E7B5D0086ACF1 /* Main.storyboard */,
 				28C0D305228E7B5D0086ACF1 /* LaunchScreen.storyboard */,
+				28FC6D112299C14A00847A2D /* Authentication.storyboard */,
 			);
 			path = StoryBoards;
 			sourceTree = "<group>";
@@ -181,6 +194,8 @@
 			isa = PBXGroup;
 			children = (
 				280323D222907C67001F938B /* LaunchScreenController.swift */,
+				28FC6D0F2299BF1200847A2D /* AddServerURLController.swift */,
+				281CD4E6229A89010051FBB7 /* LoginViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -191,6 +206,14 @@
 				280323D522907D15001F938B /* OpenMRSColors.swift */,
 			);
 			path = OpenMRS;
+			sourceTree = "<group>";
+		};
+		281CD4E1229A7BE30051FBB7 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				281CD4E2229A7BF80051FBB7 /* CustomLoadingButton.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 		286BA6A4228EBA0300C80564 /* API */ = {
@@ -470,6 +493,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28FC6D122299C14A00847A2D /* Authentication.storyboard in Resources */,
 				28C0D307228E7B5D0086ACF1 /* LaunchScreen.storyboard in Resources */,
 				28C0D304228E7B5D0086ACF1 /* Assets.xcassets in Resources */,
 				28C0D302228E7B5D0086ACF1 /* Main.storyboard in Resources */,
@@ -604,6 +628,7 @@
 				28FC6D0E22980FE600847A2D /* CustomArrayOrDic.swift in Sources */,
 				286BA6BD228EE80E00C80564 /* User.swift in Sources */,
 				28FC6D062297F54E00847A2D /* PersonName.swift in Sources */,
+				281CD4E3229A7BF80051FBB7 /* CustomLoadingButton.swift in Sources */,
 				280323D322907C67001F938B /* LaunchScreenController.swift in Sources */,
 				280323CF2290709C001F938B /* ApiErrorCodes.swift in Sources */,
 				286BA6B0228EBE1800C80564 /* AuthServiceProtocol.swift in Sources */,
@@ -612,9 +637,12 @@
 				28FC6D002297B46500847A2D /* PatientServiceResponses.swift in Sources */,
 				286BA6BF228EE96E00C80564 /* AuthenticationResponse.swift in Sources */,
 				289F2017228E7E0B00F9E95C /* KeychainStorageWrapper.swift in Sources */,
+				28FC6D102299BF1200847A2D /* AddServerURLController.swift in Sources */,
+				281CD4E5229A7FC20051FBB7 /* Utility.swift in Sources */,
 				28FC6D022297F53200847A2D /* Person.swift in Sources */,
 				280323CD22906A77001F938B /* Data.swift in Sources */,
 				285477D0228F118B00B5C7C6 /* ApiResponseErrors.swift in Sources */,
+				281CD4E7229A89010051FBB7 /* LoginViewController.swift in Sources */,
 				28C0D2FD228E7B5D0086ACF1 /* AppDelegate.swift in Sources */,
 				289F201C228E7E8D00F9E95C /* AppConfig.swift in Sources */,
 				28FC6D0A2297F56700847A2D /* Identifier.swift in Sources */,

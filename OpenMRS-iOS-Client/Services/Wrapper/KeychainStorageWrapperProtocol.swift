@@ -11,9 +11,6 @@ import KeychainAccess
 
 protocol KeychainStorageWrapperProtocol {
 
-    /// Shared KeychainWrapper instance among all the classes
-    static var sharedKeychainWrapper: KeychainStorageWrapper { get }
-
     // Set string value to Keychain storage
     func setString(_ value: String, key forKey: String) throws -> Bool?
 

@@ -16,6 +16,7 @@ import Foundation
 public enum APIEnvironment: String {
     case demo = "demo"
     case moduleRefApp = "Modules"
+    case custom = "Custom"
 
     static func getEnvironmentBaseURL() -> String {
         switch AppConfigs.Common.apiEnviroment {
@@ -23,6 +24,8 @@ public enum APIEnvironment: String {
             return "https://demo.openmrs.org/openmrs/ws/rest/v1"
         case .moduleRefApp:
             return "https://modules-refapp.openmrs.org/openmrs/ws/rest/v1"
+        case .custom:
+            return "\(Shared.openmrsServerURL)/openmrs/ws/rest/v1"
         }
     }
 }
